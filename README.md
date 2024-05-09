@@ -91,6 +91,7 @@ print(find_smallest_k(filename))`
 
 `k - value: 15727890`
 
+**Pytest** 
 
 Once all three functions were created, a test was done check the function to make sure they would run under automated testing. 
 
@@ -137,6 +138,8 @@ assert result == find_smallest_k(filename)`
 
 These parameters were run on each function, ensuring that each passed the test and resulted in the expected outcome. 
 
+**Github repository**
+
 Once all functions passed the pytest, the functions were inserted into a github repository. 
 
 To begin this process, the two python scripts were first copied into the given repository. 
@@ -153,3 +156,12 @@ Once copied, the two scripts were added, committed, then finally pushed so that 
 Once the repository was all up to date and all changes had been committed and pushed, git log could be used to view all changes that had been made and committed to the repository. 
 
 `git log`
+
+
+Once all dessired changed had been added and committed to the repository, the repository can be cloned and both scripts can be run to show the results of the functions. 
+
+**Purpose**
+
+This research is important in understanding the starting point to assemble an entire genome from these given sequences. These steps can be taken further to eventually analyze sequences so that an entire genome is assembled through the use of functions in python script. 
+
+The ability to create genome sequences opens up many possibilties for research in both biologal and biomedical fields. The sequencing of a genome can allow for researchers to better understand what could be happening at gene level allowing for better understanding of how to deal with ceratin mutations, cancers, or opens up new fields in genetic technology and even genetically modified organisms. 
