@@ -24,7 +24,7 @@ print("k =", k, ":", kmer_results) #Print the value of 'k' and the generated kme
 
 from collections import defaultdict  # Importing defaultdict from collections module
 
-def kmer_and_subsequent(genome, k):
+def kmer_and_subsequent(genome, k): #Define a function to find kmers and subsequent with 'genome' and 'k'
     kmers = defaultdict(set)
     for i in range(len(genome) - k * 2 + 1):  # Adjusted loop range
         kmer = genome[i:i + k]
@@ -32,7 +32,7 @@ def kmer_and_subsequent(genome, k):
         kmers[kmer].add(subsequent_kmer)  # Added subsequent_kmer directly to the set
     return kmers
 
-def read_fasta(file_path):
+def read_fasta(file_path): #Read fasta file
     with open(file_path, 'r') as file:
         sequence = ''  # Initialize an empty string to store the genome sequence
         for line in file:  # Iterate through each line in the FASTA file
@@ -65,4 +65,4 @@ def find_smallest_k(filename):
 filename = "../../shared/439539/reads.fa" 
 print(find_smallest_k(filename)) #Call the function and print the result 
 
-## k - value: 15727890
+##Result : k - value: 15727890
